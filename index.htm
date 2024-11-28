@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ínicio</title>
+  <!--Icones Google-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="css/custom.css" />
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Navbar-->
+  <nav class="white">
+    <div class="nav-wrapper container">
+      <a href="index.htm" class="safada brand-logo grey-text text-darken-4" style="font-family: 'Roboto Mono', monospace;">Fortrek</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger grey-text text-darken-4"><i
+          class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="grey-text text-darken-4" href="index.htm">Home</a></li>
+        <li><a class="grey-text text-darken-4" href="view/cadastroCliente.php">Clientes</a></li>
+        <li><a class="grey-text text-darken-4" href="#">Fornecedores</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.htm">Home</a></li>
+    <li><a href="view/cadastroCliente.php">Clientes</a></li>
+    <li><a href="#">Fornecedores</a></li>
+  </ul>
+
+  <!--Tentaiva de parallax-->
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text " style="font-family: 'Roboto Mono', monospace;">Fortrek.Co</h1>
+        <div class="row center">
+          <h5 class="header col s12 white-text">O melhor sistema de gerenciamento afff</h5>
+        </div>
+        <div class="row center">
+          <a href="view/cadastroCliente.php" id="download-button"
+            class="btn-large waves-effect waves-light teal lighten-2">Começar</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="img/predio3.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <!--Informações-->
+  <div class="row container">
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+        <h5 class="center">Gerenciamento rápido</h5>
+
+        <p class="light">Com um sistema simples e totalmente amador construimos essa coisa com um banco de dados com
+          menos de 20 linhas consequentemente sendo rapidinho.</p>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+        <h5 class="center">Fácil acesso</h5>
+
+        <p class="light">Nosso sistema é intuitivo, de fácil acessibilidade, com navegação e interface amigáveis que
+          garantem experiência positiva e eficiente.</p>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+        <h5 class="center">Tudo que você precisa</h5>
+
+        <p class="light">Nosso sistema é tudo que você e sua empresa procuram, cobrindo suas necessidades de
+          armanezamento e gerenciamento de dados de clientes, produtos e fornecedores.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <!--Rodapé-->
+  <footer class="page-footer teal lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">
+            <Fortrek class="Co" style="font-family: 'Roboto Mono', monospace;">Fortrek.Co
+          </h5>
+          <p class="grey-text text-lighten-4">"Não há atalhos para nenhum lugar que valha a pena ir." - Bruno e
+            Jhonatan.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3"
+                href="https://www.youtube.com/live/ekKItUuvmCM?feature=share&t=1528">Dignidade</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://youtu.be/cb0N0ZsZkbk">Reflexão</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2023 Copyright Text
+      </div>
+    </div>
+  </footer>
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script>
+    //Menu responsivo
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+
+    //Parallax
+    $(document).ready(function () {
+      $('.parallax').parallax();
+    });
+  </script>
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
